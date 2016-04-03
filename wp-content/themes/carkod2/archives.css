@@ -1,0 +1,113 @@
+/* CSS Document */
+
+/* CSS Document */
+
+
+/* Single.php */
+
+#container0 h2.single-title { font:20px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+color:#fff;
+margin-left:20px;}
+
+
+#postmetadata { background:#FF9;
+border-top:2px solid #F93;
+border-bottom:2px solid #F93;
+padding:5px;
+font:12px Tahoma, Geneva, sans-serif;
+margin-left:5px}
+
+#postmetadata a { text-decoration:none;
+color:#7A0000;}
+
+#postmetadata a:hover, #postmetadata a:active { color:#F00;}
+
+#postmetadata img.infoicon { margin: 0 10px;
+position:relative;
+top:3px;}
+
+#content { padding: 0 40px;}
+
+/* Content heading */
+
+#content h2 { font: 22px Tahoma,Geneva,sans-serif;
+border-bottom:2px solid #B51C1C;
+color:#B51C1C;
+margin-top: 10px; }
+#content h3 { font: 20px Tahoma,Geneva,sans-serif;
+border-bottom:2px solid #B51C1C;
+color:#B51C1C;
+margin: 10px 0 10px 20px;}
+#content h4 {font: 18px Tahoma,Geneva,sans-serif;
+border-bottom:2px solid #B51C1C;
+color:#B51C1C;
+margin: 10px 0 10px 30px;}
+#content h5 {font: 16px Tahoma,Geneva,sans-serif;
+border-bottom:2px solid #B51C1C;
+color:#B51C1C;
+margin: 10px 0 10px 40px;}
+#content h6 {font: 14px Tahoma,Geneva,sans-serif;
+text-decoration:underline;
+color:#B51C1C;
+margin: 10px 0 10px 50px;}
+
+/* Content paragraphs and lists */
+
+#content p { font:15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+margin:20px;
+line-height:23px;}
+
+#content a { color:#006091;
+text-decoration:none;}
+
+#content a:hover, #content a:active { color:#B51C1C;}
+
+#content ul, #content ol, #content dl { font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+margin:20px 40px;}
+
+#content li { margin:15px;}
+
+/* index.php */
+
+
+#container4 { background:url(images/bg.png) repeat-y 0 0;
+overflow:hidden;
+width:995px;
+margin:30px 5px 0 5px;}
+
+#container4 h3 { margin-bottom:10px;}
+
+#container4 h3,  #container4 p{ display:inline;}
+
+#container4 h3 a { font: 20px "Times New Roman", Times, serif;
+text-decoration:none;
+color:#b51c1c;}
+
+
+#container4 img.attachment-post-thumbnail{ float:left;
+border:1px solid #000;
+margin:0 20px 0 10px;}
+
+#container4 h3 { display:block;
+font:18px Tahoma, Geneva, sans-serif;
+color:}
+#container4 p { font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+
+#container4 div.entry { padding: 25px 30px 20px 50px;
+border-bottom:1px dashed #000;}
+
+
+/* Post pagination */
+
+div.pagelink { border-bottom:1px dashed #000;
+border-top:1px dashed #000;
+font:16px "Times New Roman", Times, serif;
+padding:5px;
+display:block;}
+
+#content div.pagelink a { padding:5px;}
+
+div.pagelink a:hover, div.pagelink a:active { color:#000; !important 
+background:#006091;
+padding:5px;}

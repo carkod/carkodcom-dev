@@ -1,0 +1,24 @@
+Carkod.com theme version 4.0
+
+Version 4.2
+- Updated to New hosting environment
+
+1. Focus on loading speed:
+	a. Infinite scroll to load only what is viewable in viewport
+	b. tabs for home, single templates for the user to select what wants to see
+	c. Less php, less images, more javascript
+	d. Mobile design (swipable sidebar) + desktop design (non swiplable)
+	e. Sticky sidebar navigation
+
+2. Future improvements
+
+
+
+a. better footnotes support for academic articles (remember to change home.php loop for "research articles")
+b. Modal image loading + gallery
+c. Sticky footer
+d. Social network sharing links
+e. Ajax comments loading after submit
+f. Apply parallax background or effects like http://soulwire.github.io/sketch.js/examples/particles.html
+g. Add more excerpt, link permalink to excerpt...
+h. Icons for "share" section in single.php, change icons to flat icons?

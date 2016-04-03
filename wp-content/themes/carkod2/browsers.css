@@ -1,0 +1,30 @@
+/* CSS Document */
+
+/* Mozilla Firefox */
+
+body.gecko #header {margin: 40px 85px;}
+
+body.gecko #container3 { margin-top:15px;}
+
+body.gecko #container4 { margin-top:15px;}
+
+/* Google Chrome */
+
+body.chrome #content { padding: 0 40px;}
+
+body.chrome #container4 {
+    margin: 11px 5px 0 5px;}
+
+
+body.chrome #container3 {margin-top: 23px;}
+
+body.chrome #header {margin-top: 40px;}
+
+body.chrome #container2 {margin-top: 65px;}
+
+/* Microsoft Internet Explorer */
+
+body.ie #container3 {margin-top: 4px;}
+
+
+/* Ipad /*/*/**/*/*/

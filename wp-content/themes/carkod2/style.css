@@ -1,0 +1,297 @@
+/*
+Theme Name: carkod 2.0
+Theme URI: http://carkod.com/portfolio
+Description: 2012 new design
+Version: 2.0
+Author: Carkod kiu
+Author URI: http://carkod.com
+Tags: simple blue, red theme with header background
+
+*/
+
+/* Overall styling */
+
+* {
+	padding:0;
+	margin:0;
+}
+body {}
+
+img { border:none;}
+
+#container0 {width:1005px;
+overflow:hidden;
+margin:0 auto;
+background: url(images/header_bg.png) no-repeat center 0;}
+
+#container {margin:0 auto;
+width:1000px;}
+
+#container2 { background:url(images/bg.png) repeat-y center 0;
+overflow:hidden;
+width:995px;
+margin:69px 5px 0 5px;}
+
+#container3 { background:url(images/bg.png) repeat-y center 0;
+overflow:hidden;
+width:995px;
+margin:30px 5px 0 5px;}
+
+
+/* overall header */
+
+#header {overflow:hidden;
+padding: 30px 30px 0px 15px;
+margin: 50px 85px;}
+#header h1 { background:url(images/title.png) no-repeat 0 0;
+padding:15px;
+text-indent:-99999px;
+float:left;
+width:400px;}
+#header p { background:url(images/descriptioin.png) no-repeat 0 0 ;
+padding:20px 20px 37px 20px;
+width:300px;
+float:left;
+text-indent:-99999px;}
+
+/* top navigation */
+
+#topnav {}
+#topnav ul { list-style:none;
+margin:10px 10px 10px 30px;}
+#topnav ul li { display:inline;
+padding:10px;}
+#topnav ul li a { font: 15px 'Mermelad', "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+color:#fff;
+text-decoration:none;}
+
+/* Sidebar */
+
+#sidebar { width:1000px;}
+#sidebar ul { list-style:none;
+margin:20px 50px 27px 20px;}
+#sidebar ul li { display:inline;}
+#sidebar ul li a { font: 12px 'Mermelad', "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+color:#813c10;
+text-decoration:none;
+border:1px dashed #813c10;
+padding: 0 5px;}
+
+#sidebar ul li a:hover, #sidebar ul li a:active { background-color:#7a0000;
+color:#fff;}
+
+div.mainmenu {}
+
+div.mainmenu ul li { list-style:none;
+display:inline;}
+
+div.mainmenu ul li a { font:14px Georgia, "Times New Roman", Times, serif;}
+
+/* the content1 */
+
+#toggle { margin-bottom:20px;}
+
+#toggle ul.mainmenu { display:inline;
+list-style:none;}
+
+#toggle ul.menu2 { margin-right:30px;
+text-align:right;}
+
+#toggle ul.menu1 { margin-left:30px;
+text-align:left;}
+
+#toggle ul.mainmenu li { display:inline;}
+
+#toggle ul.mainmenu li a { text-decoration:none;
+font:18px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+color:#fff;
+margin: 10px;}
+
+#toggle ul.menu1 { float:left;}
+#toggle ul.menu2 { float:right;}
+
+#left_column { width:747px;
+float:left;
+display:inline;
+margin:0 0 0 3px;}
+
+#left_column div.entry { padding: 25px 30px 20px 50px;
+border-bottom:1px dashed #000;
+border-right:1px dashed #000;}
+
+#left_column div.entry:hover, #left_column div.entry:active { background-color:#6b320d;}
+
+#left_column ul { list-style:none; }
+
+#left_column h3 { margin-bottom:10px;}
+
+#left_column h3,  #left_column p{ display:inline;}
+
+#left_column h3 a { font: 20px "Times New Roman", Times, serif;
+text-decoration:none;
+color:#b51c1c;}
+
+
+#left_column img.attachment-post-thumbnail{ float:left;
+border:1px solid #000;
+margin:0 20px 0 10px;}
+
+#left_column h3 { display:block;
+font:18px Tahoma, Geneva, sans-serif;
+color:}
+#left_column p { font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+/* the content2 */
+
+#right_column { width:244px;
+float:left;}
+
+#right_column ul { list-style:none;
+display:block; }
+
+#right_column ul li a { display:block;
+text-decoration:none;
+border-bottom:1px dashed #000;
+color:#006091;
+padding:10px;}
+
+#right_column ul li a:hover, #right_column ul li a:active { background-color:#006091;
+color:#fff;}
+
+/* the searchform */
+
+#searchfield { float:right;
+display:inline;
+overflow:hidden;}
+
+form#searchform { padding: 3px 5px;}
+
+#searchfield  input#searchsubmit { border:none;
+background-color:transparent;
+color:#fff;
+cursor:pointer;}
+
+/* Footer stuff */
+
+#footer { background: url(images/footer_bg.png) no-repeat center 0;
+padding:20px 25px 50px 25px;
+clear:both;
+margin: 0 auto 40px auto;
+width:955px;}
+
+#footer p { font:10px Verdana, Geneva, sans-serif;
+color:#7a0000;}
+
+
+/* Error */
+
+
+
+/* Single page */
+
+
+
+/* References section */
+
+
+#postReferences ol{ font: 12px Tahoma, Geneva, sans-serif;
+margin:40px 40px 40px 70px;}
+
+
+#postReferences li { margin:10px;}
+
+#postReferences li a { text-decoration:underline;}
+
+
+#postReferences h2 { font:3em cursive;
+color:#fff;
+cursor:pointer;
+background: #991606;
+border:1px dashed #991606;
+margin-left:3px;
+padding-left:40px;}
+
+#postReferences h2.selected {}
+
+#postReferences {}
+
+/* Related posts */
+
+#related h2 { font:2em cursive;
+color:#fff;
+background: #991606;
+border:1px dashed #991606;
+margin-left:3px;
+padding-left:40px;}
+
+#related ul li a {font: 18px "Trebuchet MS",Arial,Helvetica,sans-serif;
+padding: 10px 20px 10px 40px;
+display:block;
+border-bottom:1px dashed #000;
+color:#006091;
+text-decoration:none;
+margin-left:3px;}
+
+#related ul li a:hover, #related ul li a:active { color:#fff;
+background:#006091;}
+
+
+/* Comments */
+
+#comments { width: 1000px;}
+
+#comments h2.comment-list_title {font:2em "Comic Sans MS", cursive;
+display:block;
+background: #991606;
+color:#fff;
+margin-left:3px;
+padding-left: 40px;}
+
+#comment_form h2.comment-form_title {font:2em "Comic Sans MS", cursive;
+display:block;
+background: #991606;
+color:#fff;
+margin-left:3px;
+padding-left: 40px;}
+
+ol.comment_list p { font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#000;
+margin:10px;}
+
+#comments ol { list-style:none;
+margin: 40px 0;
+display:block;}
+
+div.comment_title p{ font:18px Georgia, "Times New Roman", Times, serif;
+border-bottom:1px solid #B51C1C;
+color:#B51C1C;}
+
+div.comment_title a {text-transform:capitalize;
+color:#B51C1C;
+text-decoration:none;}
+
+div.comment_title a:hover, div.comment_title a:active { text-decoration:underline;}
+
+#commentform p { font:1.2em 'Didact Gothic',"Lucida Sans","Lucida Grande",sans-serif;
+margin: 10px;}
+#commentform input { font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+padding: 5px;}
+
+form#commentform input:hover, #commentform input:focus { border:1px solid #991606;}
+
+form#commentform textarea.commenttext { font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+padding:5px;
+margin:10px 0;}
+
+input#submitcomment { font: 13px "Trebuchet MS",Arial,Helvetica,sans-serif !important;
+    padding: 5px !important;
+	border:1px solid #991606;
+	cursor:pointer;
+	margin-left:200px;}
+	
+input#submitcomment:hover, input#submitcomment:focus, input#submitcomment:active { background:#991606;
+color:#fff;}
+
+form#commentform p.logged-in-as {font:1.2em 'Didact Gothic',"Lucida Sans","Lucida Grande",sans-serif;}
+	
+#commentform label { margin-left: 20px;}

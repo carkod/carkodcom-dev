@@ -1,0 +1,1444 @@
+/*
+Theme Name: Carkod 4.0.5
+Theme URI: http://carkod.com/portfolio
+Description: Off-canvas sidebar, menu accordion, tabs toggle, fluid responsive layout, lazyload, scrollable sticky sidebar, 
+Version: 4.0 (2015 design)
+Author: Carlos Wu
+Author URI: http://carkod.com
+Tags: 
+Text Domain: carkod
+*/
+/* Overall styling */
+* {padding:0;margin:0;
+list-style:none;}
+
+
+/* So that super and sub script are not messed up by text line-height */
+sub, sup { line-height:0;}
+
+a {text-decoration:none;
+outline:none;
+-moz-transition: color 200ms ease 0s;
+    -o-transition: color 200ms ease 0s;
+    transition: color 200ms ease 0s;}
+	
+html {}
+
+body {
+	background:url(images/bg.jpg);
+	height:auto;}	
+@media (min-width: 1020px) {	
+
+
+
+.container1 {
+	height:100%;
+	margin: 0 auto;
+	max-width:1800px;
+	}
+/* Right content */
+	
+.container2 {
+	/* Computers */
+	width:70%;
+	box-sizing:border-box;
+	float:right;
+	height:100%;
+	
+		} 
+
+#header {
+  display:block;
+  border-bottom: 1px inset #999;
+  clear:both;
+  background:#fff;
+  border-left:2px solid #e5e5e5;
+	box-shadow:-2px 2px 5px rgba(153,153,153,0.25);
+	-moz-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+	-webkit-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+	padding: 30px;
+
+}
+
+#header .title-home {
+	display:none;}
+
+#header a {
+	overflow:hidden;}
+
+#header img {
+	display:block;
+	height:100%;
+	width:100%;
+	max-width:700px;
+	margin: 0 auto;}
+
+#header #open-left {
+	display:none;}
+
+#content {background:#fff;border:2px solid #e5e5e5;
+border-top:none !important;
+	box-shadow:-2px 2px 5px rgba(153,153,153,0.25);
+	-moz-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+	-webkit-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);}
+
+
+#content ul.menu-list {
+	list-style:none;
+	text-align:center;
+		border-bottom:1px inset #999;
+		overflow:hidden;
+		height:100%;}
+	
+#content ul.menu-list li {
+	display: inline;
+	float:left;}
+	
+#content ul.menu-list li a.tabs-active {
+	background:#83c441;
+	color:#fff;}
+
+#content ul.menu-list li a {
+	font:1em "Franklin Gothic Book", Arial, sans-serif;
+	color:#726658;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height:60px;
+	display:block;
+	padding: 0 20px;}
+
+#content ul.menu-list li a:active, #content ul.menu-list li a:hover {
+	background:#83c441;
+	color:#fff;
+	}
+
+
+#content .tabs {
+	clear:both;}
+	
+#content  .entry {
+	padding:60px;}
+	
+#content .entry h3 a, .title h2#title-single, .title h2#title-results{
+	font: 2em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#726658;}
+	#content h4 {
+	font: 1.8px Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif; }
+	#content .entry h5 {
+	font: 1.6px "Franklin Gothic Book", Arial, sans-serif; }
+	#content .entry h6 {
+	font: 1.4px "Franklin Gothic Book", Arial, sans-serif; }
+	#content .entry h7 {
+	font: 1.2px "Franklin Gothic Book", Arial, sans-serif; }
+	
+#content .entry h3 a:hover, #content .entry h3 a:active{
+	color:#83c441;
+}
+	
+#content .entry p {
+	font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+	letter-spacing:1px;
+	padding:20px 0;
+	line-height: 25px;
+	 }
+#content .entry {
+	border-bottom:1px dotted #e0e0e0;}	 
+	 
+.pagination .page-numbers {
+	display:none;}
+.pagination a.next {
+	display:block;}
+
+.pagination a.next {
+	display:inline-block;
+	display:inline; /* For IE lower than 8 */
+	position:relative;
+	top: 5px;
+	border:1px solid #e0e0e0;
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px;
+	background-clip:border-box;
+	-webkit-background-clip: padding-box; 
+  	-moz-background-clip:    padding; 
+  	background-clip:         padding-box;
+	background:#83c441;
+	color:#fff;
+	font:1.5em "Franklin Gothic Book", Arial, sans-serif;
+	padding:10px;
+	margin-top:10px;
+	box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+	-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);}
+	 
+	 
+.pagination a.next:hover, .pagination a.next:active {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	border:none;}
+
+	 
+#postmetdata small.thetopic {
+	float:left;}
+	
+#postmetadata small.date {
+	float:right;}
+#postmetadata span.thecat {
+	background:url(images/topics-icon.png) no-repeat 0 0;
+	padding: 10px 10px 10px 30px;
+	font:1.5em "Franklin Gothic Book", Arial, sans-serif;
+	vertical-align:middle;
+	padding: 5px 10px 10px 40px;}
+	
+#postmetadata span.updated {
+	background:url(images/date-icon.png) no-repeat 0 0;
+	padding: 10px 10px 10px 30px;
+	font:1.5em "Franklin Gothic Book", Arial, sans-serif;
+	vertical-align:middle;
+	padding: 5px 10px 10px 40px;}
+
+#postmetadata a {
+	color:#83c441;
+	}
+
+#postmetadata a:hover, #postmetadata a:active {
+	border-bottom:1px solid #83c441;}
+
+	/* Infinite scroll loading image */
+	
+	#infscr-loading img {
+		display : block;
+		margin : 1em auto;
+	}
+
+
+/* Single.php */
+
+.title h2#title-single, .title h2#title-results {
+	text-align:center;
+	padding: 50px;
+	font-size: 2.5em;}
+
+	/* Article styles */
+	
+	#single-entry {
+		padding:0 60px;}
+	
+	
+	#single-entry h1 {
+		font: 1.8em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+		margin: 50px 0 10px 0;
+		color:#f05a28;}
+	#single-entry h2 {
+		font: 1.6em "Franklin Gothic Book", Arial, sans-serif; 
+		color:#f05a28;
+		margin: 50px 0 10px 0;}
+	#single-entry h3 {
+		font: 1.4em "Franklin Gothic Book", Arial, sans-serif; 
+		color:#f05a28;
+		margin: 50px 0 10px 0;}
+	#single-entry h4 {
+		font: 1.3em "Franklin Gothic Book", Arial, sans-serif;
+		color:#f05a28;
+		border-bottom: 1px solid #f05a28;
+		margin: 50px 0 10px 0;}
+	#single-entry h5 {
+		font: 1.3em "Franklin Gothic Book", Arial, sans-serif;
+		color:#f05a28;
+		border-bottom: 1px double #f05a28;
+		margin: 50px 0 10px 0;}
+	#single-entry p {
+		box-sizing:border-box;
+		font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+		letter-spacing:1px;
+		padding:10px 0;
+		line-height: 1.5em;
+		display:block;
+		clear:both;
+		}
+	#single-entry code {
+		background:#ddd;
+		padding:3px;
+		word-wrap:break-word;}
+	
+	#single-entry a {
+		color:#83c441;
+		text-decoration:none;}
+	#single-entry a:active, #single-entry a:hover {
+		border-bottom:1px solid #83c441;}	
+
+
+		/* Article Unordered List styles */
+		
+		#single-entry ul, #single-entry ol {
+			font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px;
+			line-height:1.5em;
+			margin: 10px 0 10px 20px;}
+			
+		#single-entry ul li {	list-style:inside square;}
+		
+		#single-entry li { padding: 5px;}
+			/* Second and third level*/
+			
+			#single-entry ul li ul li, #single-entry ol li ul li {	list-style:inside disc;
+				letter-spacing:1px;
+				margin: 10px 0 10px 40px;
+				font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+				letter-spacing:1px; }
+			#single-entry ul li ul li ul li , #single-entry  ol li ul li{	
+				list-style:inside circle;
+				font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+				letter-spacing:1px;}
+
+		/* Ordered lists */
+		
+		#single-entry ol li {	list-style:inside decimal;}
+		#single-entry ol li ol li {	list-style:inside lower-latin;
+			letter-spacing:1px;
+			margin: 10px 0 10px 40px;
+			font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px; }
+		#single-entry ol li ol li ol li{	
+			list-style:inside lower-roman;
+			font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px;}
+			
+		/* Definition lists */
+		#single-entry dl {
+			border-left: 5px solid #83c441;
+			padding: 5px 0 5px 20px;
+			max-width:500px;}
+		#single-entry  dl dt {
+			margin: 20px 0 10px 0;
+			font-weight:bold;}
+		#single-entry dl dd {
+			font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing: 1px;
+			margin: 10px 0;}
+			
+		/* Blockquotes */ 
+		
+	
+		
+		#single-entry blockquote {
+			border-left: 5px solid #83c441;
+			padding: 10px 10px 10px 20px;
+			background:#FFFAC0;
+			}
+		#single-entry blockquote cite {
+			font-size: 0.8em;
+			font-weight:100;
+			left: 100%;
+			text-align: right;
+			margin: 10px 0 ;
+			display:block;
+			}
+		#single-entry blockquote cite:before {
+			content:"—";}
+			
+			
+		#single-entry img {
+			border:5px solid #e5e5e5;}	
+		#single-entry p img.alignleft {
+			float:left;
+			margin-right:10px;}
+			
+		#single-entry p img.alignright {
+			float:right;
+			margin-left: 10px;}
+			
+		#single-entry p img.aligncenter {
+			margin: 0 auto;
+			display:block;
+			}
+		#single-entry a:hover img {
+			text-decoration:none;
+			border:5px solid #e5e5e5 !important;
+			}
+			
+
+	/* Menu 2 */
+	#menu2 ul#menu2-list {
+		list-style:none;
+		text-align:center;
+			border-bottom:1px inset #999;
+			border-top:1px inset #999;
+			overflow:hidden;
+			height:100%;}
+		
+	#menu2 ul#menu2-list li {
+		display: inline;
+		float:left;}
+	
+	#menu2 ul#menu2-list li a {
+		font:1em "Franklin Gothic Book", Arial, sans-serif;
+		color:#726658;
+		text-decoration:none;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		line-height:60px;
+		display:block;
+		padding: 0 40px;}
+	
+	#menu2 ul#menu2-list li a:active, #menu2 ul#menu2-list li  a:hover {
+		background:#83c441;
+		color:#fff;
+		}
+		
+	#menu2 ul#menu2-list li a.tabs-active {
+			background:#83c441;
+			color:#fff;
+			}
+		/* Related */
+		
+		
+		.postmetadata-single {
+			margin: 20px 60px 40px 60px;}
+		
+		#related ul li a {
+	font: 1.5em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#726658;
+	margin: 30px 60px;
+	display:block;}
+	
+		#related ul li a:hover, #related ul li a:active{
+	color:#83c441;
+}
+		
+		/* Post references */
+		
+		#postReferences ol {
+			margin: 0 60px 60px 100px;}
+		
+		#postReferences ol li {
+			font:1em Tahoma, Geneva, sans-serif;
+			list-style: outside decimal;
+			letter-spacing:1px;
+			margin: 30px 0;
+			}
+		#postReferences-title {
+			text-align:center;
+			padding: 50px;
+			font: 2em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  			color: #726658;
+			}
+
+		/* Discussion */
+		
+		.nocomments, h3#comments-title {
+			text-align:center;
+			padding: 50px;
+			font: 2em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  			color: #726658;
+			}
+		
+		ol#comments-list li.comment {
+		box-sizing:border-box;
+		font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+		letter-spacing:1px;
+		line-height: 1.5em;
+		display:block;
+		clear:both;
+		margin: 60px;
+		}
+		
+		ol#comments-list .comment-text {
+			padding:20px;
+			border:1px solid #e0e0e0;
+			margin: 20px 0 ;}
+			
+		ol#comments-list .comment-author {
+			text-transform:capitalize;
+}
+			
+		ol#comments-list .comment-date {
+			color:#ccc;}	
+		ol#comments-list .reply a {
+			background:#83c441;
+			color:#fff;
+			padding: 5px;
+			-webkit-border-radius: 8px; 
+			-moz-border-radius: 8px; 
+			border-radius: 8px;}
+			
+		ol#comments-list .reply a:hover {box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+			-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			border:1px solid #e5e5e5;}
+			
+		ol#comments-list .reply a:active {
+			border:1px inset #e5e5e5;}
+			
+		
+		/* Leave a reply */
+		
+		
+		#respond form {
+			padding: 0 60px;}
+			
+		#respond form p {
+			margin: 20px 0 ;}
+			
+		#respond input#author, #respond input#email {
+			padding: 5px ;
+			border:1px solid #e5e5e5;}
+			
+		#respond #author:focus, #respond #email:focus {
+			border:1px solid #83c441;}
+			
+		
+		#respond textarea {
+			padding: 5px ;
+			border:1px solid #e5e5e5;}
+			
+		#respond textarea:focus {
+			border:1px solid #83c441;}
+			
+		#respond form label, #respond .respond-textarea {
+			font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px;
+			line-height: 1.5em;
+			margin-left: 20px; }
+		
+		#respond input#submit {
+			background:#83c441;
+			color:#fff;
+			font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+			padding:5px 10px;
+			-webkit-border-radius: 8px; 
+			-moz-border-radius: 8px; 
+			border-radius: 8px;
+			border:none;
+			cursor:pointer;
+			}
+			
+		#respond input#submit:hover {
+			box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+			-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			border:1px solid #e5e5e5;
+			}
+		
+		#respond input#submit:active {
+			border:1px inset #e5e5e5;
+			outline:none;
+			}
+		
+		
+/* Nested comments max level 6 depth*/
+.commentlist li ul {
+	margin-left:40px;}
+	
+.commentlist li ul li ul {
+	margin-left:80px;}
+	
+	
+.commentlist li ul li ul li ul {
+	margin-left:120px;}
+	
+
+.commentlist li ul li ul li ul li ul {
+	margin-left:160px;}
+	
+.commentlist li ul li ul li ul li ul li ul {
+	margin-left:200px;}
+	
+
+.commentlist li ul li ul li ul li ul li ul li ul{
+	margin-left:240px;}	
+		
+		
+
+/* Index.php */
+
+span.underline {
+	border-bottom: 1px solid #726658;}
+
+
+
+/* Left content */
+
+#sidebar {
+	
+	/* Device specific */
+	width:28%;
+	display:block;
+	background:#fff;	
+	float:left;
+	
+	/*End device specific */
+	
+
+	border:2px solid #e5e5e5;
+	box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+	-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+	box-sizing:border-box;
+
+	} 
+	
+
+	
+#sidebar ul#sidebar-list {
+	list-style:none;
+	margin: 0 50px;
+	}	
+
+#sidebar ul li a, #sidebar ul li.section {
+	display:block;
+	font: bold 1em "Franklin Gothic Book", Arial, sans-serif;
+	color:#726658;
+	border-bottom:1px dotted #e0e0e0;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding:20px 40px 20px 20px;
+
+}
+
+
+
+#sidebar ul a.closed {
+	background:url(images/more-icon.png) no-repeat right center;}
+	
+#sidebar ul a.opened {
+	background:url(images/less-icon.png) no-repeat right center;}
+
+	
+#sidebar ul li.section {
+	cursor:pointer;}
+	
+
+#sidebar ul li ul li a {
+	display:block;
+	font: lighter  1em "Franklin Gothic Book", Arial, sans-serif;
+	color:#726658;
+	border-bottom:1px dotted #e0e0e0;
+	text-decoration:none;
+	}
+
+#sidebar ul li a:active, #sidebar ul li a:hover {
+	color:#83c441;
+	}
+
+
+#sidebar #searchfield {
+	margin: 20px 0;
+	border:none;
+	}
+
+#searchfield #field {
+	border:none;
+	width:30px;
+	height:30px;
+	margin: 2px;
+	background:url(images/search-icon.png) no-repeat center 0;
+	vertical-align:middle;
+	}
+	
+#searchfield form {
+	border:1px solid #e5e5e5;
+	-webkit-border-radius: 10px; 
+  	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	-webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;}
+	
+#searchfield form input#s {
+	border:none;
+	width: 200px;
+	padding:5px;
+}
+
+/* End sidebar */
+
+/* Footer (foot.php) */
+
+#footer {
+	clear:both;}
+	
+#footer p {
+	color: #999;
+	font: lighter 0.8em "Franklin Gothic Book", Arial, sans-serif; 
+	padding: 10px;
+	line-height:20px;
+	}
+
+	
+/* Contact form */
+
+				label#message, label#human {
+					margin-left:0 !important;}
+
+
+				.error{
+                  padding: 5px 9px;
+                  border: 1px solid red;
+                  color: red;
+                  border-radius: 3px;
+                }
+
+                .success{
+                  padding: 5px 9px;
+                  border: 1px solid green;
+                  color: green;
+                  border-radius: 3px;
+                }
+
+                form span{
+                  color: red;
+                }
+
+	
+}
+
+
+/* Mobile styling */
+
+@media (max-width: 1020px) {
+
+.container1 {
+	height:100%;
+	}	
+	
+	
+	
+	
+#header {
+  display:block;
+  border-bottom: 1px inset #999;
+  clear:both;
+  background:#fff;
+  background:#fff;
+	box-shadow:-2px 2px 5px rgba(153,153,153,0.25);
+	-moz-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+	-webkit-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+	padding: 30px;
+	position:relative;
+
+}
+
+#header img {
+	display:none;
+}
+	
+#header a#open-left {
+	display: block;
+	padding: 6px;
+	background:#000;
+	
+	border-radius:3px;
+	box-sizing:border-box;
+	overflow:hidden;
+	}
+#header a#open-left span.bar{
+	display:block;
+	}
+#header .title-home a {
+	color:#83c441;
+	font:bold 2em "Franklin Gothic Book", Arial, sans-serif; 
+	display:inline;
+	text-transform:uppercase;}
+
+
+#header a span.bar {
+	display:block;
+	width:20px;
+	height:1px;
+	padding:1px;
+	background:#fff;
+	margin: 4px 0;
+	border-radius: 3px;}
+
+
+ .container2-mobile {
+	 position:fixed;
+	 overflow-y:scroll;
+	 overflow-x:hidden;
+	 z-index:2;
+	 width:100%;
+	 height:100%;
+	 background:#fff;
+	 border:2px solid #e5e5e5;
+		border-top:none !important;
+		box-shadow:-2px 2px 5px rgba(153,153,153,0.25);
+		-moz-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+		-webkit-box-shadow: -2px 2px 5px rgba(153,153,153,0.25);
+  
+		  
+		  
+		 backface-visibility:hidden;
+    -webkit-backface-visibility:hidden; /* Chrome and Safari */
+    -moz-backface-visibility:hidden; /* Firefox */
+    -ms-backface-visibility:hidden; /* Internet Explorer 10+ */
+		  
+}
+
+#content ul.menu-list {
+	list-style:none;
+	text-align:center;
+	border-bottom:1px inset #999;
+    white-space: nowrap;}
+	
+#content ul.menu-list li {
+	
+}
+	
+#content ul.menu-list li a.tabs-active {
+	background:#83c441;
+	color:#fff;}
+
+#content ul.menu-list li a {
+	font:1em "Franklin Gothic Book", Arial, sans-serif;
+	color:#726658;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height:60px;
+	padding: 0 20px;
+	display:block;
+}
+
+#content ul.menu-list li a:active, #content ul.menu-list li a:hover {
+	background:#83c441;
+	color:#fff;
+	}
+
+
+#content .tabs {
+	clear:both;}
+	
+#content  .entry {
+	padding:30px;
+	border-bottom: 1px dotted #e0e0e0;}
+	
+#content .entry h3 a, .title h2#title-single, .title h2#title-results{
+	font: 2em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#726658;
+	 }
+	#content h4 {
+	font: 1.8px Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif; }
+	#content .entry h5 {
+	font: 1.6px "Franklin Gothic Book", Arial, sans-serif; }
+	#content .entry h6 {
+	font: 1.4px "Franklin Gothic Book", Arial, sans-serif; }
+	#content .entry h7 {
+	font: 1.2px "Franklin Gothic Book", Arial, sans-serif; }
+	
+#content .entry h3 a:hover, #content .entry h3 a:active{
+	color:#83c441;
+}
+	
+#content .entry p {
+	font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+	letter-spacing:1px;
+	padding:20px 0;
+	line-height: 25px;
+	 }
+#content .entry {
+	border-bottom:1px dotted #e0e0e0;}	 
+	
+body.snapjs-left .container2-mobile, body.snapjs-left #header {
+
+	background:#ccc;
+	}
+
+.pagination .page-numbers {
+	display:none;}
+.pagination a.next {
+	display:inline;
+	border:1px solid #e0e0e0;
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px;
+	background-clip:border-box;
+	-webkit-background-clip: padding-box; 
+  	-moz-background-clip:    padding; 
+  	background-clip:         padding-box;
+	background:#83c441;
+	color:#fff;
+	font:1.5em "Franklin Gothic Book", Arial, sans-serif;
+	padding:10px;
+	margin:10px;
+	box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+	-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);}
+	 
+	 
+.pagination a.next:hover, .pagination a.next:active {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	border:none;}
+	 
+#postmetadata small.thetopic {
+	float:left;}
+	
+#postmetadata small.date {
+	float:right;}
+#postmetadata span.thecat {
+	background:url(images/topics-icon.png) no-repeat 0 0;
+	padding: 10px 10px 10px 30px;
+	font:1.5em "Franklin Gothic Book", Arial, sans-serif;
+	vertical-align:middle;
+	padding: 5px 10px 10px 40px;}
+	
+#postmetadata span.updated {
+	background:url(images/date-icon.png) no-repeat 0 0;
+	padding: 10px 10px 10px 30px;
+	font:1.5em "Franklin Gothic Book", Arial, sans-serif;
+	vertical-align:middle;
+	padding: 5px 10px 10px 40px;}
+
+#postmetadata a {
+	color:#83c441;
+	}
+
+#postmetadata a:hover, #postmetadata a:active {
+	border-bottom:1px solid #83c441;}
+
+	/* Infinite scroll loading image */
+	
+	#infscr-loading img {
+		display : block;
+		margin : 1em auto;
+	}
+
+
+/* Single.php */
+
+.title h2#title-single, .title h2#title-results {
+	text-align:center;
+	padding: 25px;
+	font-size: 2.5em;}
+
+	/* Article styles */
+	
+	#single-entry {
+		padding:0 30px;}
+	
+	
+	#single-entry h1 {
+		font: 1.8em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+		margin: 30px 0 10px 0;
+		color:#f05a28;}
+	#single-entry h2 {
+		font: 1.6em "Franklin Gothic Book", Arial, sans-serif; 
+		color:#f05a28;
+		margin: 30px 0 10px 0;}
+	#single-entry h3 {
+		font: 1.4em "Franklin Gothic Book", Arial, sans-serif; 
+		color:#f05a28;
+		margin: 30px 0 10px 0;}
+	#single-entry h4 {
+		font: 1.3em "Franklin Gothic Book", Arial, sans-serif;
+		color:#f05a28;
+		border-bottom: 1px solid #f05a28;
+		margin: 30px 0 10px 0;}
+	#single-entry h5 {
+		font: 1.3em "Franklin Gothic Book", Arial, sans-serif;
+		color:#f05a28;
+		border-bottom: 1px double #f05a28;
+		margin: 30px 0 10px 0;}
+	#single-entry p {
+		box-sizing:border-box;
+		font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+		letter-spacing:1px;
+		padding:10px 0;
+		line-height: 1.5em;
+		display:block;
+		clear:both;
+
+		}
+		
+	#single-entry img {
+		width:100%;
+		height:100%;}
+	#single-entry code {
+		background:#ddd;
+		padding:3px;
+		word-wrap:break-word;}
+	
+	#single-entry a {
+		color:#83c441;
+		text-decoration:none;}
+	#single-entry a:active, #single-entry a:hover {
+		border-bottom:1px solid #83c441;}	
+
+
+		/* Article Unordered List styles */
+		
+		#single-entry ul, #single-entry ol {
+			font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px;
+			line-height:1.5em;
+			margin: 10px 0 10px 10px;}
+			
+		#single-entry ul li {	list-style:inside square;}
+		
+		#single-entry li { padding: 5px;}
+			/* Second and third level*/
+			
+			#single-entry ul li ul li, #single-entry ol li ul li {	list-style:inside disc;
+				letter-spacing:1px;
+				margin: 10px 0 10px 15px;
+				font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+				letter-spacing:1px; }
+			#single-entry ul li ul li ul li , #single-entry  ol li ul li{	
+				list-style:inside circle;
+				font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+				letter-spacing:1px;}
+
+		/* Ordered lists */
+		
+		#single-entry ol li {	list-style:inside decimal;}
+		#single-entry ol li ol li {	list-style:inside lower-latin;
+			letter-spacing:1px;
+			margin: 10px 0 10px 30px;
+			font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px; }
+		#single-entry ol li ol li ol li{	
+			list-style:inside lower-roman;
+			font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px;}
+			
+		/* Definition lists */
+		#single-entry dl {
+			border-left: 5px solid #83c441;
+			padding: 5px 0 5px 20px;
+			max-width:500px;}
+		#single-entry  dl dt {
+			margin: 20px 0 10px 0;
+			font-weight:bold;}
+		#single-entry dl dd {
+			font:0.9em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing: 1px;
+			margin: 10px 0;}
+			
+		/* Blockquotes */ 
+		
+	
+		
+		#single-entry blockquote {
+			border-left: 5px solid #83c441;
+			padding: 10px 10px 10px 20px;
+			background:#FFFAC0;
+			}
+		#single-entry blockquote cite {
+			font-size: 0.8em;
+			font-weight:100;
+			left: 100%;
+			text-align: right;
+			margin: 10px 0 ;
+			display:block;
+			}
+		#single-entry blockquote cite:before {
+			content:"—";}
+			
+			
+		#single-entry img {
+			border:5px solid #e5e5e5;}	
+		#single-entry p img.alignleft {
+			float:left;
+
+			margin-right:10px;}
+			
+		#single-entry p img.alignright {
+			float:right;
+			margin-left: 10px;}
+			
+		#single-entry p img.aligncenter {
+			margin: 0 auto;
+			display:block;
+			}
+		#single-entry a:hover img {
+			text-decoration:none;
+			border:5px solid #e5e5e5 !important;
+			}
+			
+
+	/* Menu 2 */
+	
+#menu2 {
+	clear:both;
+	margin-top: 20px;}	
+
+	#menu2 ul#menu2-list {
+			list-style:none;
+			text-align:center;
+			border-bottom:1px inset #999;
+			border-top:1px inset #999;
+			white-space:nowrap;
+			overflow:scroll;}
+		
+	#menu2 ul#menu2-list li {
+		display: inline;
+		}
+
+	#menu2 ul#menu2-list li a {
+		font:1em "Franklin Gothic Book", Arial, sans-serif;
+		color:#726658;
+		text-decoration:none;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		line-height:60px;
+		display:inline;
+		padding:20px;}
+
+	
+	#menu2 ul#menu2-list li a:active, #menu2 ul#menu2-list li a:hover {
+		background:#83c441;
+		color:#fff;
+		}
+		
+	#menu2 ul#menu2-list li a.tabs-active {
+			background:#83c441;
+			color:#fff;
+			}
+		/* Related */
+		
+		
+		.postmetadata-single {
+			margin: 20px 40px 20px 40px;}
+		
+		#related ul li a {
+	font: 1.5em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#726658;
+	margin: 30px 60px;
+	display:block;}
+	
+		#related ul li a:hover, #related ul li a:active{
+	color:#83c441;
+}
+		
+		/* Post references */
+		
+		#postReferences ol {
+			margin: 0 60px 60px 100px;}
+		
+		#postReferences ol li {
+			font:1em Tahoma, Geneva, sans-serif;
+			list-style: outside decimal;
+			letter-spacing:1px;
+			margin: 30px 0;
+			}
+		#postReferences-title {
+			text-align:center;
+			padding: 25px;
+			font: 2em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  			color: #726658;
+			}
+
+		/* Discussion */
+		
+		.nocomments, h3#comments-title {
+			text-align:center;
+			padding: 25px;
+			font: 2em Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  			color: #726658;
+			}
+		
+		ol#comments-list li.comment {
+		box-sizing:border-box;
+		font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+		letter-spacing:1px;
+		line-height: 1.5em;
+		display:block;
+		clear:both;
+		margin: 30px;
+		}
+		
+		ol#comments-list .comment-text {
+			padding:20px;
+			border:1px solid #e0e0e0;
+			margin: 20px 0 ;}
+			
+		ol#comments-list .comment-author {
+			text-transform:capitalize;
+}
+			
+		ol#comments-list .comment-date {
+			color:#ccc;}	
+		ol#comments-list .reply a {
+			background:#83c441;
+			color:#fff;
+			padding: 5px;
+			-webkit-border-radius: 8px; 
+			-moz-border-radius: 8px; 
+			border-radius: 8px;}
+			
+		ol#comments-list .reply a:hover {
+			box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+			-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			border:1px solid #e5e5e5;}
+			
+		ol#comments-list .reply a:active {
+			border:1px inset #e5e5e5;}
+			
+		
+		/* Leave a reply */
+		
+		
+		#respond form {
+			padding: 0 30px;}
+			
+		#respond form p {
+			margin: 20px 0 ;}
+			
+		#respond input#author, #respond input#email {
+			padding: 5px ;
+			border:1px solid #e5e5e5;
+			width: 60%;
+			float:left;}
+			
+		#respond #author:focus, #respond #email:focus {
+			border:1px solid #83c441;}
+			
+		
+		#respond textarea {
+			padding: 5px ;
+			border:1px solid #e5e5e5;
+			width:100%;}
+			
+		#respond textarea:focus {
+			border:1px solid #83c441;}
+			
+		#respond form label, #respond .respond-textarea {
+			font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+			letter-spacing:1px;
+			line-height: 1.5em;
+			margin-left: 20px; }
+		
+		#respond input#submit {
+			background:#83c441;
+			color:#fff;
+			font:1.1em "Franklin Gothic Book", Arial, sans-serif;
+			padding:5px 10px;
+			-webkit-border-radius: 8px; 
+			-moz-border-radius: 8px; 
+			border-radius: 8px;
+			border:none;
+			cursor:pointer;
+			}
+			
+		#respond input#submit:hover {
+			box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+			-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+			border:1px solid #e5e5e5;
+			}
+		
+		#respond input#submit:active {
+			border:1px inset #e5e5e5;
+			outline:none;
+			}
+		
+		
+/* Nested comments max level 6 depth*/
+.commentlist li ul {
+	margin-left:40px;}
+	
+
+/* Index.php */
+
+span.underline {
+	border-bottom: 1px solid #726658;}
+
+
+
+/* Left content */
+
+
+.sidebar-mobile {
+	position:fixed;
+	overflow:scroll;
+	 top:0;
+	 left:0;
+	 z-index:1;
+	width:260px; /* 20% in desktop.css */
+	height:100%;
+	background:#fff;
+	float:left;
+	display:block;
+	
+	-webkit-overflow-scrolling: touch;
+  	-webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+	transition: width 0.3s ease;
+		  
+	/* Smooth Scrolling */	  
+	
+    -webkit-transition-property: top, bottom;
+    transition-property: top, bottom;
+    -webkit-transition-duration: .2s, .2s;
+    transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, linear;
+    transition-timing-function: linear, linear;
+    -webkit-overflow-scrolling: touch;
+	
+		
+	border:2px solid #e5e5e5;
+	box-shadow:1px 2px 2px rgba(153,153,153,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+	-webkit-box-shadow: 1px 2px 2px rgba(153,153,153,0.25);
+	box-sizing:border-box;
+	
+}
+
+#sidebar ul#sidebar-list {
+	list-style:none;
+	padding: 0 30px;
+
+	}
+#sidebar ul#sidebar-list li {
+	}
+#sidebar ul#sidebar-list li a {
+	display:block;
+	font:bold 1em "Franklin Gothic Book", Arial, sans-serif;
+	color:#726658;
+	border-bottom:1px inset #999;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding: 20px 40px 20px 20px;
+
+}
+
+
+#sidebar ul#sidebar-list ul.child li a {
+	font: normal 1em "Franklin Gothic Book", Arial, sans-serif;
+
+}
+
+#sidebar ul a.closed {
+	background:url(images/more-icon.png) no-repeat right center;}
+	
+#sidebar ul a.opened {
+	background:url(images/less-icon.png) no-repeat right center;}
+
+	
+#sidebar ul li.section {
+	cursor:pointer;}
+	
+
+#sidebar ul li a:active, #sidebar ul li a:hover {
+	color:#83c441;
+	}
+
+
+#sidebar #searchfield {
+	margin: 20px 0;
+	border:none;
+	}
+
+#searchfield #field {
+	border:none;
+	width:30px;
+	height:30px;
+	margin: 2px;
+	background:url(images/search-icon.png) no-repeat center 0;
+	vertical-align:middle;
+	}
+	
+#searchfield form {
+	border:1px solid #e5e5e5;
+	-webkit-border-radius: 10px; 
+  	-moz-border-radius: 10px; 
+	border-radius: 10px;
+	-webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;
+  box-sizing:border-box;
+  width:200px}
+	
+#searchfield form input#s {
+	border:none;
+	width: 150px;
+	padding:5px;
+	font-size: 0.7em;
+	vertical-align:middle;
+}
+
+#searchfield form .ui-input-text {
+	display:inline;
+	}
+	
+#searchfield form .ui-btn {
+	display:inline;
+	}
+
+/* End sidebar */
+
+/* Footer (foot.php) */
+
+#footer {
+	clear:both;}
+	
+#footer p {
+	color: #999;
+	font: lighter 0.8em "Franklin Gothic Book", Arial, sans-serif; 
+	padding: 10px;
+	line-height:20px;
+	}
+
+	
+/* Contact form */
+
+				label#message, label#human {
+					margin-left:0 !important;}
+
+
+				.error{
+                  padding: 5px 9px;
+                  border: 1px solid red;
+                  color: red;
+                  border-radius: 3px;
+                }
+
+                .success{
+                  padding: 5px 9px;
+                  border: 1px solid green;
+                  color: green;
+                  border-radius: 3px;
+                }
+
+                form span{
+                  color: red;
+                }
+}
+
+
+@media (max-width: 600px) {
+
+#postmetadata {
+	padding:0;
+	overflow:hidden;
+	}
+
+#postmetadata small.thetopic, #postmetadata small.date {
+	float:none;
+	display:block;
+	margin: 20px 0;
+	}
+
+
+#content ul.menu-list {
+	list-style:none;
+	text-align:center;
+	border-bottom:1px inset #999;
+	}
+	
+#content ul.menu-list li {
+	}
+
+	}
+
+
+

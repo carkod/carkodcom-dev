@@ -1,0 +1,548 @@
+/*
+Theme Name: carkod 3.0
+Theme URI: http://carkod.com/portfolio
+Description: 2013 new design
+Version: 3.0
+Author: Carlos Wu
+Author URI: http://carkod.com
+Tags: tiled paper, table cloth texture logo
+
+*/
+
+/* Overall styling */
+
+* {padding:0;margin:0;}
+
+
+
+html { background:url(images/bg.jpg) 0 0;}
+
+body {background:url(images/header_bg.png) repeat-x 0 0;
+position:relative;
+top:0;}
+
+#container1 {width:1000px;
+margin: 0 auto;
+overflow:hidden;
+background:url(images/content_bottom.png) no-repeat 0 bottom;
+padding-bottom: 32px;}
+
+#container2 {
+	clear:both;
+	background:url(images/content_top.png) no-repeat 3px 0;
+	overflow:hidden;
+	width: 660px;
+}
+
+/* overall header */
+
+#header {clear:both;
+margin: 12px auto 30px auto;
+width: 1000px;
+overflow:hidden;}
+
+#searchfield  {float:right;
+width:300px;}
+
+#logo { float:left;
+width:630px;}
+
+#logo h1 { margin: 40px 20px 20px 20px;}
+
+#logo p { margin: 20px 25px 20px 25px;}
+
+/* top navigation */
+
+#topnav { background:url(images/nav_bg.png) no-repeat 0 0;
+overflow:hidden;
+padding: 0 10%;}
+
+#topnav ul { display:inline;
+list-style:none;
+padding: 0 20px;}
+
+#topnav ul li { float:left;
+padding: 10px;}
+
+#topnav ul li a { color:#595953;
+font: 16px "MV Boli", "Lucida Handwriting", "Comic Sans MS", cursive;
+text-decoration:none;}
+
+
+/* Sidebar */
+
+#sidebar { width:207px;
+position:fixed;
+right:15%;
+background:url(images/sidebar_top.png) no-repeat 0 0;
+top:200px;}
+
+#sidebar ul { list-style:none;
+background: url(images/sidebar_bg.png) repeat-y 0 0;}
+
+
+#sidebar ul li a { font: 14px "Trajan Pro", Georgia, "Times New Roman", Times, serif;
+color:#04203d;
+text-decoration:none;
+display:block;
+padding: 6px 20px;
+border-bottom: 1px dashed #000;
+margin: 0 2px;}
+
+#sidebar ul li a:hover, #sidebar ul li a:active { background:#5790c9;
+color:#fff;
+margin: 0 2px;}
+
+#sidebar h2 { font: 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+color:#fff;
+text-align:center;
+padding: 5px;}
+
+#sidebar h2.greybg { background:#696969;
+margin: 0 2px;}
+
+#sidebar #sidebar_bg { background:url(images/sidebar_bottom.png) no-repeat 0 0;
+width:207px;
+height:34px;}
+
+/* the content */
+
+#toggle { padding: 0 50px;}
+#toggle ul { display:inline;
+clear:both;
+list-style:none;
+width:700px;}
+
+#toggle ul li { float:left;
+margin: 9px 0;}
+
+#toggle ul li a {
+	text-decoration:none;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #FFF;
+	text-align: center;
+	display: inline;
+	padding: 0 20px;
+}
+
+#content {width:658px;
+background:url(images/content_bg.png) repeat-y 0 0;
+overflow:hidden;
+clear:right;}
+
+#content .entry { padding: 20px 30px;
+margin: 0 4px;
+border-bottom: 1px dashed #000;}
+
+#content .entry h3 a { font:17px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+color:#04479a;
+text-decoration:none;}
+
+#content .entry p { font:13px Tahoma, Geneva, sans-serif;
+margin: 10px 0;}
+
+#content .entry img { float:left;
+margin:10px 20px 10px 0;}
+
+#content #postmetadata small, #content #postmetadata small a { font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#fff;
+text-decoration:none;}
+
+#content #postmetadata a:hover, #content #postmetadata a:active { text-decoration:underline;}
+
+#content #postmetadata small.thetopic  { background:#b5ac21;
+padding: 2px 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;}
+
+#content #postmetadata small.thetags { background:#28a028;
+padding: 2px 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;}
+
+/* Content Pagination */
+
+.page_nav { margin: 25px 0 10px 150px;}
+
+.page_nav .page-numbers{
+  padding:4px 10px;
+  margin:0px 4px;
+  border:1px solid #696969;
+  color:#696969; 
+  text-decoration:none;
+}
+
+.page_nav .page-numbers:hover {
+  border:1px solid #5790C9;
+  color:#fff;
+  background-color:#5790C9;
+
+}
+
+.page_nav .current{
+  border:1px solid #5790C9;
+  color:#fff;
+  background-color:#5790C9;
+}
+.page_nav .prev, .page_nav .next{
+  border:1px solid #696969;
+  color:#696969;
+}
+
+
+
+/* the searchform */
+
+#searchfield { width:360px;
+margin: 20px 0;}
+
+#searchfield #s { padding: 3px 5px;
+font:13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+-moz-border-radius: 5px;
+border-radius: 5px}
+
+#searchsubmit { padding: 3px 5px;
+font:13px Georgia, "Times New Roman", Times, serif;
+color:#666;
+background:#fff;
+border:1px solid #fff;
+cursor:pointer;}
+
+
+/* Footer stuff */
+
+#footer { clear:both;
+width:700px;
+margin: 2% 85% 2% 15%;}
+
+#footer p { font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+#footer p a { text-decoration:none;
+color:#5790c9;}
+
+#footer p a:hover, #footer p a:active { text-decoration:underline;}
+
+/* Error */
+
+
+
+/* Single page */
+
+
+#container2 h2 {text-decoration:none;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
+	color: #FFF;
+	text-align: left;
+	display: block;
+	padding: 10px 25px;}
+	
+
+#single { padding-top: 10px;}
+
+#single ul, #single ol, #single dl { margin: 10px 0 10px 40px;
+font:13px Tahoma, Geneva, sans-serif;}
+
+#single ul li, #single ol li, #single dl li { margin: 5px 0;}
+
+#single a { color:#5790c9;
+text-decoration:none;}
+#single a:hover, #single a:active { text-decoration:underline;}
+
+#single h2, #single h3, #single h4, #single h5, #single h6, #single h7, #single h8 { font: Georgia, "Times New Roman", Times, serif;
+color:#5790c9;
+margin: 10px 0;}
+
+#single h2 {font-size:22px;}
+#single h3 {font-size:21px;}
+#single h4 {font-size:20px;}
+#single h5 {font-size:19px;}
+#single h6 {font-size:18px;}
+#single h7 {font-size:17px;}
+#single h8 {font-size:16px;
+text-decoration:underline;}
+
+#single.entry { border-bottom:none;}
+
+
+#content #postmetadata small.updated { background:#a00000;
+padding: 2px 5px;
+-moz-border-radius: 5px;
+border-radius: 5px}
+
+
+/* References section */
+
+
+#postReferences ol{ margin: 20px 80px 0 80px;}
+
+
+#postReferences li { margin:20px 0px;
+font:12px Tahoma, Geneva, sans-serif;}
+
+#postReferences li a { text-decoration:underline;
+font:12px Tahoma, Geneva, sans-serif;}
+
+
+h2#postReferences_title {font:2em Georgia, "Times New Roman", Times, serif;
+color:#A00000;
+cursor:pointer;
+margin-left:3px;
+padding-left:40px;
+border-bottom: 2px solid #A00000;
+margin-right:4px;}
+
+#postReferences h2.selected {}
+
+#postReferences {}
+
+/* Related posts */
+
+#related h2 {font:2em Georgia, "Times New Roman", Times, serif;
+display:block;
+background:#666;
+margin: 0 4px;}
+
+#related ul { list-style:none;}
+
+#related ul li a { font: 14px Tahoma, Geneva, sans-serif;
+border-bottom: 1px dashed #000;
+color:#04203D;
+display:block;
+text-decoration:none;
+padding: 10px 40px;
+margin: 0 4px;}
+
+#related ul li a:hover, #related ul li a:active { color:#fff;
+background:#5790c9;}
+
+
+
+/* the upload form */
+
+input.file_input_textbox
+{
+	position: relative;	
+	width: 280px;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid;
+	border-color: #BBBBBB;
+	-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+form.file_input_uploadform
+{
+	position: relative; 
+	width: 60px; 
+	height: 27px; 
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+input.file_input_button
+{
+	width: 60px; 
+	height: 27px;
+	position: absolute; 
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #EEEEEE;
+	color: #555555;
+	background-attachment: scroll;
+	background-image: url("white-grad-active.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #BBBBBB;
+	-moz-border-radius: 11px 11px 11px 11px;
+}
+
+input.file_input_button_hover
+{
+	width: 60px; 
+	height: 27px;
+	position: absolute; 
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #EEEEEE;
+	color: #111111;
+	background-attachment: scroll;
+	background-image: url("white-grad-active.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	-moz-border-radius: 11px 11px 11px 11px;
+	cursor:pointer;
+}
+
+input.file_input_submit
+{
+	width: 100px; 
+	height: 27px;
+	position: relative; 
+	margin: 0px;
+	padding: 0px;
+	background-color: #EEEEEE;
+	color: #555555;
+	background-attachment: scroll;
+	background-image: url("white-grad-active.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #BBBBBB;
+	-moz-border-radius: 11px 11px 11px 11px;
+}
+
+input.file_input_submit:hover
+{
+	width: 100px; 
+	height: 27px;
+	position: relative; 
+	margin: 0px;
+	padding: 0px;
+	background-color: #EEEEEE;
+	color: #111111;
+	background-attachment: scroll;
+	background-image: url("white-grad-active.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	-moz-border-radius: 11px 11px 11px 11px;
+}
+
+input.file_input_hidden
+{
+	font-size: 45px; 
+	position: absolute; 
+	right: 0px; 
+	top: 0px; 
+	margin: 0px;
+	padding: 0px;
+	opacity: 0; 
+	
+	filter: alpha(opacity=0); 
+	-ms-filter: "alpha(opacity=0)"; 
+	-khtml-opacity: 0; 
+	-moz-opacity: 0;
+}
+
+div.file_progress_bar
+{
+	width: 360px; 
+	height: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	display: block;
+}
+
+img.file_progress_bar_inner
+{
+	display: block;	
+	width: 100px; 
+	height: 8px;
+	margin-top: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	border-style: none;
+	background-color: green;
+}
+
+span.file_messagebox_inner
+{
+	display: block;	
+	width: 340px;
+	margin: 0px;
+	font-size: small;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D3D3D3;
+	background-color: #F5F5F5;
+	color: black;
+	line-height: 1.2;
+}
+
+div.file_div_clean
+{
+	display: block;	
+	margin: 5px 0;
+	padding: 0px;
+	border-style: none;
+	background: none;
+	color: black;
+}
+
+div.file_space_clean
+{
+	display: block;	
+	margin: 0 0 2px 0;
+	padding: 0px;
+	border-style: none;
+	background: none;
+	color: black;
+}
+
+table.file_table_clean
+{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-spacing: 0px;
+	background: none;
+	color: black;
+	width: auto;
+}
+
+td.file_td_clean
+{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-spacing: 0px;
+	background: none;
+	color: black;
+	vertical-align: middle;
+}
+
+span.file_item_clean
+{
+	margin: 0px;
+	padding: 0px;
+	border-style: none;
+	background: none;
+	color: black;
+}
+
+select.file_item_clean
+{
+	margin: 0px;
+	padding: 0px;
+	border-style: none;
+	background: none;
+	color: black;
+}
+
+span.file_title_clean
+{
+	margin: 0px;
+	padding: 0px;
+	border-style: none;
+	background: none;
+	color: black;
+}
+

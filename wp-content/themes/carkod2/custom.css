@@ -1,0 +1,36 @@
+/* Default */
+
+.float-left { float:left;}
+.float-right { float:left;}
+.align-center { text-align:center;}
+a { text-decoration:none;}
+a:hover, a:active { text-decoration:underline;}
+a img { border:none;}
+
+/* Contact forms */
+
+div.wpcf7 input, div.wpcf7 select {
+    font: 13px "Trebuchet MS",Arial,Helvetica,sans-serif;
+    padding: 5px;
+}
+
+div.wpcf7 input.wpcf7-submit {
+    border: 1px solid #991606;
+    cursor: pointer;
+    font: 13px "Trebuchet MS",Arial,Helvetica,sans-serif !important;
+    margin-left: 200px;
+    padding: 5px !important;
+}
+
+div.wpcf7 input.wpcf7-submit:hover, div.wpcf7 input.wpcf7-submit:focus, div.wpcf7 input.wpcf7-submit:active { background:#991606;
+color:#fff;}
+
+div.wpcf7 .wpcf7-textarea {
+    font: 13px "Trebuchet MS",Arial,Helvetica,sans-serif;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+div.wpcf7 .wpcf7-list-item { display:block;}
+
+div.wpcf7 .wpcf7-checkbox {margin: 20px 0;}
