@@ -1,0 +1,131 @@
+#dial {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #ececec;
+  border: 12px solid #5c5c5c;
+  border-radius: 50%;
+  margin: 8% auto 0;
+  box-shadow: 1px 14px 21px 0 rgba(0, 0, 0, 0.2); }
+  #dial span {
+    display: inline-block; }
+  #dial .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse 20px 15px at 50% 0, #ececec 40%, #5c5c5c 80%);
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3); }
+  #dial .sec-hand {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -7px;
+    width: 10px;
+    height: 86px;
+    background: url("https://themegion.github.com/AnalogClock/sec.svg") 50% 50% no-repeat;
+    z-index: 9;
+    transform-origin: 50% 74px; }
+  #dial .sec-hand.shadow {
+    top: 0;
+    margin-left: -4px;
+    background-image: url("https://themegion.github.com/AnalogClock/sec-shdw.svg");
+    opacity: .1;
+    z-index: 8;
+    filter: blur(2px); }
+  #dial .min-hand {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -6px;
+    width: 10px;
+    height: 86px;
+    background: url("https://themegion.github.com/AnalogClock/min.svg") 50% 50% no-repeat;
+    z-index: 7;
+    transform-origin: 50% 74px; }
+  #dial .min-hand.shadow {
+    top: 0;
+    margin-left: -6px;
+    background-image: url("https://themegion.github.com/AnalogClock/min-shdw.svg");
+    opacity: .1;
+    z-index: 6;
+    filter: blur(2px); }
+  #dial .hour-hand {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: -7px;
+    width: 8px;
+    height: 66px;
+    background: url("https://themegion.github.com/AnalogClock/hour.svg") 50% 50% no-repeat;
+    z-index: 5;
+    transform-origin: 50% 74px; }
+  #dial .hour-hand.shadow {
+    top: 24px;
+    margin-left: -4px;
+    background-image: url("https://themegion.github.com/AnalogClock/hour-shdw.svg");
+    opacity: .1;
+    z-index: 4;
+    filter: blur(2px); }
+  #dial .twelve,
+  #dial .three,
+  #dial .six,
+  #dial .nine {
+    position: absolute;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    color: #777; }
+  #dial .twelve {
+    top: 19px;
+    left: 64px; }
+  #dial .three {
+    top: 63px;
+    right: 23px; }
+  #dial .six {
+    left: 70px;
+    bottom: 20px; }
+  #dial .nine {
+    top: 63px;
+    left: 24px; }
+  #dial .diallines {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    margin-left: -1px;
+    width: 1px;
+    height: 5px;
+    background: #b3b3b0;
+    z-index: 1;
+    transform-origin: 50% 68px; }
+  #dial .diallines:nth-of-type(5n) {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 2px;
+    height: 15px;
+    background: #b3b3b0;
+    z-index: 1;
+    transform-origin: 50% 70px; }
+  #dial .date {
+    position: absolute;
+    top: 242px;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 30px;
+    background: #83837a;
+    border-radius: 6px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.3), inset 0 -2px 2px 0 rgba(255, 255, 255, 0.2); }
+
+/*# sourceMappingURL=carkod5.css.map */
